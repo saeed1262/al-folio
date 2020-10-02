@@ -8,7 +8,8 @@ profile:
   align: right
   image: profile_pic.jpeg
   address: >
-    <p>BioMotion Lab, Centre for Vision Research</p>
+    <p>Ph.D. Student</p>
+    <p>Department of Electrical Engineering and Computer Science</p>
     <p>York University</p>
     <p>Toronto, Canada</p>
 
