@@ -29,7 +29,7 @@ Will be available soon!
 ```bibtex
 @article {ghorbani2020b,
 journal = {Computer Graphics Forum},
-title = {{Probabilistic Character Motion Synthesis using a Hierarchical Deep Latent Variable Model}},
+title = {Probabilistic Character Motion Synthesis using a Hierarchical Deep Latent Variable Model},
 author = {Ghorbani, Saeed and Wloka, Calden and Etemad, Ali and Brubaker, Marcus A. and Troje, Nikolaus F.},
 year = {2020},
 publisher = {The Eurographics Association and John Wiley & Sons Ltd.},
