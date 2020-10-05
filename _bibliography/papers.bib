@@ -11,6 +11,9 @@ year = {2020},
 publisher = {The Eurographics Association and John Wiley & Sons Ltd.},
 ISSN = {1467-8659},
 DOI = {10.1111/cgf.14116},
+html={http://diglib.eg.org/handle/10.1111/cgf14116},
+pdf={http://diglib.eg.org/bitstream/handle/10.1111/cgf14116/v39i8pp225-239.pdf?sequence=1&isAllowed=y},
+abstract={We present a probabilistic framework to generate character animations based on weak control signals, such that the synthesized motions are realistic while retaining the stochastic nature of human movement. The proposed architecture, which is designed as a hierarchical recurrent model, maps each sub-sequence of motions into a stochastic latent code using a variational autoencoder extended over the temporal domain. We also propose an objective function which respects the impact of each joint on the pose and compares the joint angles based on angular distance. We use two novel quantitative protocols and human qualitative assessment to demonstrate the ability of our model to generate convincing and diverse periodic and non-periodic motion sequences without the need for strong control signals.},
 selected={true}
 }
 
@@ -21,7 +24,11 @@ selected={true}
       eprint={2003.01888},
       journal={arXiv:2003.01888},
       primaryClass={cs.CV},
-      selected={true}
+      selected={true},
+      abstract={Human movements are both an area of intense study and the basis of many applications such as character animation. For many applications, it is crucial to identify movements from videos or analyze datasets of movements. Here we introduce a new human Motion and Video dataset MoVi, which we make available publicly. It contains 60 female and 30 male actors performing a collection of 20 predefined everyday actions and sports movements, and one self-chosen movement. In five capture rounds, the same actors and movements were recorded using different hardware systems, including an optical motion capture system, video cameras, and inertial measurement units (IMU). For some of the capture rounds, the actors were recorded when wearing natural clothing, for the other rounds they wore minimal clothing. In total, our dataset contains 9 hours of motion capture data, 17 hours of video data from 4 different points of view (including one hand-held camera), and 6.6 hours of IMU data. In this paper, we describe how the dataset was collected and post-processed; We present state-of-the-art estimates of skeletal motions and full-body shape deformations associated with skeletal motion. We discuss examples for potential studies this dataset could enable.},
+      html={https://www.biomotionlab.ca/movi/},
+      pdf={https://arxiv.org/pdf/2003.01888.pdf}
+
 }
 
 @inproceedings{ghorbani2019auto,
@@ -31,21 +38,40 @@ selected={true}
   pages={167--178},
   year={2019},
   organization={Springer},
-  selected={true}
+  selected={true},
+  abstract={Optical marker-based motion capture is a vital tool in applications such as motion and behavioural analysis, animation, and biomechanics. Labelling, that is, assigning optical markers to the pre-defined positions on the body is a time consuming and labour intensive postprocessing part of current motion capture pipelines. The problem can be considered as a ranking process in which markers shuffled by an unknown permutation matrix are sorted to recover the correct order. In this paper, we present a framework for automatic marker labelling which first estimates a permutation matrix for each individual frame using a differentiable permutation learning model and then utilizes temporal consistency to identify and correct remaining labelling errors. Experiments conducted on the test data show the effectiveness of our framework.},
+  html={https://arxiv.org/abs/1907.13580},
+  pdf={https://arxiv.org/pdf/1907.13580.pdf}
 }
 
 @article{davoodnia2019bed,
   title={In-bed pressure-based pose estimation using image space representation learning},
   author={Davoodnia, Vandad and Ghorbani, Saeed and Etemad, Ali},
   journal={arXiv preprint arXiv:1908.08919},
-  year={2019}
+  year={2019},
+  html={https://arxiv.org/abs/1908.08919},
+  pdf={https://arxiv.org/pdf/1908.08919.pdf},
+  abstract={Recent advances in deep pose estimation models have proven to be effective in a wide range of applications such as health monitoring, sports, animations, and robotics. However, pose estimation models fail to generalize when facing images acquired from in-bed pressure sensing systems. In this paper, we address this challenge by presenting a novel end-to-end framework capable of accurately locating body parts from vague pressure data. Our method exploits the idea of equipping an off-the-shelf pose estimator with a deep trainable neural network, which pre-processes and prepares the pressure data for subsequent pose estimation. Our model transforms the ambiguous pressure maps to images containing shapes and structures similar to the common input domain of the pre-existing pose estimation methods. As a result, we show that our model is able to reconstruct unclear body parts, which in turn enables pose estimators to accurately and robustly estimate the pose. We train and test our method on a manually annotated public pressure map dataset using a combination of loss functions. Results confirm the effectiveness of our method by the high visual quality in the generated images and the high pose estimation rates achieved.}
 }
 
 @inproceedings{ghayoor2010sub,
   title={Sub-pixel image registration based on physical forces},
   author={Ghayoor, Ali and Ghorbani, Saeed and Shirazi, Ali Asghar Beheshti},
-  booktitle={2010 International Conference on Wireless Communications \& Signal Processing (WCSP)},
+  booktitle={International Conference on Wireless Communications \& Signal Processing (WCSP)},
   pages={1--5},
   year={2010},
-  organization={IEEE}
+  organization={IEEE},
+  html={https://ieeexplore.ieee.org/document/5633452},
+  Abstract={A new method for image registration has been previously proposed by the authors, which the registration is based on physical forces. The registration parameters are translation and rotation. This method assumes images like charged materials that attract each other. In this case, one of the images moves in the same direction as the applied force while the other one is still. The movement of the image continues until the resultant force becomes zero. This approach estimates the registration parameters simultaneously and leading to a better optimized set of registration parameters. The registration error for this method is 1 to 3 pixels. In this paper we aim to develop this method for the applications which need sub-pixel accuracy. First, by applying the Canny edge detector on the input images, the edge information is also used for the registration process to increase the robustness of this method in the presence of noise. After that, sub-pixel accuracy is provided for this method by using interpolation techniques.}
+}
+
+@inproceedings{ghorbani2019,
+  abbr={Poster},
+  title={Automatic initialization and tracking of markers in optical motion capture by learning to rank},
+  author={Ghorbani, Saeed and Etemad, Ali and Troje, Nikolaus F},
+  booktitle={CVR Vision Conference},
+  pages={1--5},
+  year={2019},
+  organization={CVR},
+  pdf={https://www.biomotionlab.ca/Abstracts/Ghorbani_CVR2019.pdf},
 }
