@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 description: <a href="#">York University</a>. Address. Contacts. Moto. Etc.
 
