@@ -5,9 +5,9 @@
 // Typography
 
 a, table.table a {
-  color: var(--global-theme-color);
+  color: $theme-color;
   &:hover {
-    color: var(--global-theme-color);
+    color: $theme-color;
     text-decoration: underline;
   }
   &:hover:after {
@@ -65,7 +65,7 @@ a, table.table a {
     color: inherit;
     font-size: 0.875rem;
     &:hover {
-      color: var(--global-theme-color);
+      color: $theme-color;
       text-decoration: none;
     }
   }
@@ -78,7 +78,6 @@ a, table.table a {
   box-shadow: none;
   border-bottom: 1px solid $grey-color-light;
   opacity: 0.95;
-  background-color: var(--global-bg-color);
 }
 .navbar.navbar-light {
   // Remove link decoration
@@ -87,27 +86,25 @@ a, table.table a {
       text-decoration: none;
     }
   }
-  .navbar-brand {
-    color: var(--global-text-color);
-  }
   .navbar-nav .nav-item .nav-link {
     &:hover {
-      color: var(--global-hover-color);
+      color: $theme-color;
     }
   }
   .navbar-nav .nav-item.active>.nav-link {
       background-color: inherit;
+      color: $theme-color;
       font-weight: bolder;
-      color: var(--global-theme-color);
       &:hover {
-        color: var(--global-hover-color);
+        color: $theme-color;
       }
   }
   .contact-icon {
     font-size: 2rem;
     a {
+      color: $grey-color-dark;
       &:hover {
-        color: var(--global-hover-color);
+        color: $theme-color;
       }
     }
   }
@@ -153,12 +150,8 @@ a, table.table a {
 
 .news table td {
   font-size: 1rem;
-  color: var(--global-text-color);
 }
 
-.news table th {
-  color: var(--global-text-color);
-}
 
 // Social (bottom)
 
@@ -167,9 +160,9 @@ a, table.table a {
   .contact-icon {
     font-size: 4rem;
     a {
-      color: var(--global-icon-color);
+      color: $grey-color-dark;
       &:hover {
-        color: var(--global-theme-color);
+        color: $theme-color;
       }
     }
   }
@@ -180,18 +173,19 @@ a, table.table a {
 
 
 // Footer
+
 footer.fixed-bottom {
-  color: var(--global-footer-text-color);
-  background-color: var(--global-footer-bg-color);
+  color: lighten($grey-color, 25%);
+  background-color: $grey-color-dark;
   font-size: 0.75rem;
   .container {
     padding-top: 9px;
     padding-bottom: 8px;
   }
   a {
-    color: var(--global-footer-link-color);
+    color: white;
     &:hover {
-      color: pink;
+      color: lighten($theme-color, 25%);
       text-decoration: none;
     }
   }
@@ -213,7 +207,7 @@ footer.sticky-bottom {
   padding-top: 2rem;
   padding-bottom: 5rem;
   h1 {
-    color: var(--global-theme-color);
+    color: $theme-color;
     font-size: 5rem;
   }
 }
@@ -233,19 +227,19 @@ footer.sticky-bottom {
       margin-bottom: 0;
     }
     a {
-      color: var(--global-text-color);
+      color: black;
       text-decoration: none;
       &:hover {
-        color: var(--global-theme-color);
+        color: $theme-color;
       }
     }
   }
 }
 
 .pagination .page-item.active .page-link {
-  background-color: var(--global-theme-color);
+  background-color: $theme-color;
   &:hover {
-    background-color: var(--global-theme-color);
+    background-color: $theme-color;
   }
 }
 
@@ -254,7 +248,7 @@ footer.sticky-bottom {
 
 .distill {
   a:hover {
-    border-bottom-color: var(--global-theme-color);
+    border-bottom-color: $theme-color;
     text-decoration: none;
   }
 }
@@ -270,7 +264,7 @@ footer.sticky-bottom {
       color: black;
       text-decoration: none;
       &:hover {
-        color: var(--global-theme-color);
+        color: $theme-color;
       }
     }
   }
@@ -285,7 +279,7 @@ footer.sticky-bottom {
 .publications {
   margin-top: 2rem;
   h1 {
-    color: var(--global-theme-color);
+    color: $theme-color;
     font-size: 2rem;
     text-align: center;
     margin-top: 1em;
@@ -317,7 +311,7 @@ footer.sticky-bottom {
         margin-bottom: 0.5rem;
         abbr {
           display: inline-block;
-          background-color: var(--global-theme-color);
+          background-color: $theme-color;
           padding-left: 1rem;
           padding-right: 1rem;
           a {
@@ -328,8 +322,8 @@ footer.sticky-bottom {
           }
         }
         .award {
-          color: var(--global-theme-color) !important;
-          border: 1px solid var(--global-theme-color);
+          color: $theme-color !important;
+          border: 1px solid $theme-color;
         }
       }
       .title {
@@ -337,7 +331,7 @@ footer.sticky-bottom {
       }
       .author {
         a {
-          border-bottom: 1px dashed var(--global-theme-color);
+          border-bottom: 1px dashed $theme-color;
           &:hover {
               border-bottom-style: solid;
               text-decoration: none;
@@ -350,15 +344,15 @@ footer.sticky-bottom {
       }
       .links {
         a.btn {
-          color: var(--global-text-color);
-          border: 1px solid var(--global-text-color);
+          color: $text-color;
+          border: 1px solid $text-color;
           padding-left: 1rem;
           padding-right: 1rem;
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
           &:hover {
-            color: var(--global-theme-color);
-            border-color: var(--global-theme-color);
+            color: $theme-color;
+            border-color: $theme-color;
           }
         }
       }
@@ -399,17 +393,4 @@ footer.sticky-bottom {
       }
     }
   }
-}
-
-// Rouge Color Customization
-code {
-  color: var(--global-theme-color);
-}
-// Transitioning Themes
-html.transition,
-html.transition *,
-html.transition *:before,
-html.transition *:after {
-  transition: all 750ms !important;
-  transition-delay: 0 !important;
 }
