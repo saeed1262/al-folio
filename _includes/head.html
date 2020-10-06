@@ -33,6 +33,7 @@
 
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | relative_url }}">
 
-{% if site.google_analytics and jekyll.environment == 'production' %}
-{% include analytics.html %}
+<!-- Theming-->
+{% if site.enable_darkmode %}
+  <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
 {% endif %}
