@@ -33,6 +33,6 @@
 
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | relative_url }}">
 
-{% if site.google_analytics and jekyll.environment == 'production' %}
+{% if site.google_analytics%}
 {% include analytics.html %}
 {% endif %}
