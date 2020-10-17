@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Stochastic Motion Model
+title: Probabilistic Motion Model
 description: Probabilistic Character Motion Synthesis using a Hierarchical Deep Latent Variable Model
 img: /assets/img/motion.jpeg
 importance: 2
@@ -12,19 +12,15 @@ We present a probabilistic framework to generate character animations based on w
     <iframe width="560" height="315" src="https://www.youtube.com/embed/r9F74LcGC0A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+---
+
 ## Publication
 
-**Probabilistic Character Motion Synthesis using a Hierarchical Deep Latent Variable Model**, Ghorbani, Saeed, Wloka, Calden, Etemad, Ali, Brubaker, Marcus A., and Troje, Nikolaus F. *Computer Graphics Forum 2020*. [Link](http://diglib.eg.org/handle/10.1111/cgf14116)
+**Probabilistic Character Motion Synthesis using a Hierarchical Deep Latent Variable Model**, Ghorbani, Saeed, Wloka, Calden, Etemad, Ali, Brubaker, Marcus A., and Troje, Nikolaus F. *Computer Graphics Forum 2020*. [Paper](../../assets/pdf/GhorbaniSCA2020.pdf)
 
 ---
 
-## Code
-
-Will be available soon!
-
----
-
-### Referencing the MoVi Dataset
+### Referencing
 
 ```bibtex
 @article {ghorbani2020b,
@@ -37,3 +33,8 @@ ISSN = {1467-8659},
 DOI = {10.1111/cgf.14116}
 }
 ```
+## Code
+
+Will be available soon!
+
+---

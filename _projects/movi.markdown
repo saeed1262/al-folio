@@ -13,6 +13,7 @@ importance: 1
     <img class="center" src="{{ '/assets/img/demo.gif' | relative_url }}" alt="" title="example image"/>
 </div>
 
+---
 
 ## Publication
 Here is a link to the preprint [manuscript](https://arxiv.org/abs/2003.01888).
